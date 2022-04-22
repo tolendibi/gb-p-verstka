@@ -760,6 +760,14 @@ position: relative;
 z-index: 2;
 cursor: pointer;
 }
+.filterslabelpink {
+    color: #EF5B70 !important;
+    left: 16px;
+    top: 13px;
+}
+
+
+    
 @media (min-width: 768px) {
     .filtersLeft .filtersIcon {
         width: 15px;
@@ -782,8 +790,7 @@ cursor: pointer;
 .hiddenn {
     display: none;
 }
-.filterPopup {
-    
+.filterPopup {    
 position: absolute;
 left: 0;
 top: 0;
