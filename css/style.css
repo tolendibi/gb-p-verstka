@@ -742,6 +742,7 @@ color: #6F6E6E;
     display: none;
     position: relative;
     z-index: 2;
+    cursor: pointer;
 }
 @media (min-width: 768px) {
     .filtersLeft .filtersLabel {
@@ -757,6 +758,7 @@ color: #000000;
 height: 25px;
 position: relative;
 z-index: 2;
+cursor: pointer;
 }
 @media (min-width: 768px) {
     .filtersLeft .filtersIcon {
