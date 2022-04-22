@@ -768,15 +768,15 @@ z-index: 2;
 .filtersLeft {
     position: relative;
 }
-.filtersLeft:hover .filtersLabel,
+/* .filtersLeft:hover .filtersLabel,
 .filtersLeft:hover .filtersIcon {
     left: 16px;
     top: 13px;
-}
-.filtersLeft:hover .filtersLabel,
+} */
+/* .filtersLeft:hover .filtersLabel,
 .filtersLeft:hover .filtersIcon {
     color: #EF5B70;
-}
+} */
 .hiddenn {
     display: none;
 }
@@ -792,8 +792,8 @@ box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 padding: 46px 16px 16px 16px;
 z-index: 1;
 }
-.filtersLeft:hover .filterPopup {
+/* .filtersLeft:hover .filterPopup {
     display: block;
-}
+} */
 /*filters end*/
 /*CATALOG file end*/

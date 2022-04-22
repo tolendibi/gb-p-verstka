@@ -7,8 +7,10 @@ function toggleMenu() {
 }
 headerbars.addEventListener('click', toggleMenu);
 meuclose.addEventListener('click', toggleMenu);
-
 /*app-js*/
+let filterPopup = document.querySelector('.filterPopup');
 
-let filterPopup = document.querySelector('filterPopup');
-let filtersLabel = document.querySelector('filtersLabel');
+let filtersLabel = document.querySelector('.filtersLabel');
+filtersLabel.addEventListener('click', function() {
+    filterPopup.classList.toggle('hiddenn');
+});
