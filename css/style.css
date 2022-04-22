@@ -738,11 +738,13 @@ color: #6F6E6E;
         margin-right: 25px;
     } 
 }
-.filtersLeft span {
+.filtersLeft .filtersLabel {
     display: none;
+    position: relative;
+    z-index: 2;
 }
 @media (min-width: 768px) {
-    .filtersLeft span {
+    .filtersLeft .filtersLabel {
         display: inline;
         font-weight: 600;
 font-size: 14px;
@@ -750,16 +752,48 @@ line-height: 17px;
 color: #000000;
     }
 }
-.filtersLeft img {
+.filtersLeft .filtersIcon {
     width: 37px;
 height: 25px;
+position: relative;
+z-index: 2;
 }
 @media (min-width: 768px) {
-    .filtersLeft img {
+    .filtersLeft .filtersIcon {
         width: 15px;
     height: 10px;
     margin-left: 11px;
     }
+}
+.filtersLeft {
+    position: relative;
+}
+.filtersLeft:hover .filtersLabel,
+.filtersLeft:hover .filtersIcon {
+    left: 16px;
+    top: 13px;
+}
+.filtersLeft:hover .filtersLabel,
+.filtersLeft:hover .filtersIcon {
+    color: #EF5B70;
+}
+.hiddenn {
+    display: none;
+}
+.filterPopup {
+    
+position: absolute;
+left: 0;
+top: 0;
+width: 360px;
+height: 531px;
+background: #FFFFFF;
+box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+padding: 46px 16px 16px 16px;
+z-index: 1;
+}
+.filtersLeft:hover .filterPopup {
+    display: block;
 }
 /*filters end*/
 /*CATALOG file end*/
