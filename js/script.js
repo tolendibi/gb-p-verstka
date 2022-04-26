@@ -24,6 +24,20 @@ filtersLabel.addEventListener('click', function() {
     } else 
     filtersIcon.setAttribute('src','../images/filter.svg')
 });
+let filterCategoryHeader = document.querySelectorAll('.filterCategoryHeader');
+filterCategoryHeader.forEach(function(header) {
+    header.addEventListener('click', function(event) {
+        event.target.nextElementSibling.classList.toggle('hidden');
+    })
+});
+
+let filtersizes = document.querySelector('.filtersizes');
+let filtersizewrap = document.querySelector('.filtersizewrap');
+filtersizewrap.addEventListener('click', function() {
+    filtersizes.classList.toggle('hidden');
+});
+
+
 // let filtersIcon = document.querySelector('.filtersIcon');
 // filtersIcon.addEventListener('click', function() {
 //     filterPopup.classList.toggle('hiddenn');
