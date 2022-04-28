@@ -37,6 +37,12 @@ filtersizewrap.addEventListener('click', function() {
     filtersizes.classList.toggle('hidden');
 });
 
+// let sliderimg = document.querySelector('.sliderimg');
+// let slider-button = document.querySelector('.slider-button');
+// slider-button.addEventListener('click', function() {
+//     sliderimg.classList.toggle('hidden');
+// });
+
 
 // let filtersIcon = document.querySelector('.filtersIcon');
 // filtersIcon.addEventListener('click', function() {
