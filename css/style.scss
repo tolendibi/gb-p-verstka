@@ -3,6 +3,13 @@ body {
   font-family: Lato, sans-serif;
 }
 /*heer start*/
+.menubr {
+position: fixed;
+width: 100%;
+top: 0;
+left: 0;
+z-index: 1030;
+}
 .header {
   background: #222222;
   height: 74px;
@@ -62,6 +69,7 @@ i {
 .brandwrap {
   min-height: 363px;
   position: relative;
+  margin-top: 70px;
 }
 
 .brandinsidewrap {
@@ -591,6 +599,7 @@ margin-bottom: 32px;*/
 .newarrivals {
   background: #f8f3f4;
   min-height: 148px;
+  margin-top: 70px;
 }
 .newarrivals h1 {
   margin: 24px 0 32px;
@@ -785,7 +794,6 @@ cursor: pointer;
     height: 30px;
       }
     }
-}
 
 /*Select every element*/
 [id^="item"] {
@@ -795,8 +803,6 @@ cursor: pointer;
     z-index: 2;
     opacity: 1;
   /* background:url('../images/slider/girl.jpg'); */
-  background-position: center;
-background-repeat: no-repeat; */
   }
 .item-2{
   /* background:url('../images/slider/girl1.jpg'); */
@@ -821,7 +827,6 @@ background-repeat: no-repeat;
     z-index: 3;
     opacity: 1;
   }
-}
 /**silder end**/
 .collection {
   padding: 64px 24px;
