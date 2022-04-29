@@ -83,7 +83,6 @@ body {
 .brandwrap {
   min-height: 363px;
   position: relative;
-  margin-top: 70px;
 }
 
 .brandinsidewrap {
@@ -114,6 +113,7 @@ body {
 .brandleft img {
   display: block;
   width: 100%;
+  margin-top: 70px;
 }
 
 .brandright {
@@ -210,7 +210,8 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 999;
+  margin-top: 74px;
 }
 
 .hidden {
@@ -265,12 +266,9 @@ body {
 }
 
 .offers {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: (247px)[3] 111px;
-      grid-template-rows: repeat(3, 247px) 111px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 247px) 111px;
   row-gap: 32px;
   padding: 64px 16px;
   /*padding-left: 16px;
@@ -278,17 +276,13 @@ padding-right: 16px;
 margin-top: 32px;
 margin-bottom: 32px;*/
 }
-
 .offers > div {
   position: relative;
 }
-
 @media (min-width: 768px) {
   .offers {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: 167px 116px;
-        grid-template-rows: 167px 116px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 167px 116px;
     gap: 20px;
   }
   .offeraccesories {
@@ -299,39 +293,26 @@ margin-bottom: 32px;*/
 .offers img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: absolute;
   left: 0;
   top: 0;
 }
-
 .offertitle {
   color: white;
   position: relative;
   z-index: 1;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-size: 16px;
 }
-
 .offertitlebottom {
   color: #f16d7f;
 }
-
 .featured {
   padding-left: 8px;
   padding-right: 8px;
@@ -371,8 +352,7 @@ margin-bottom: 32px;*/
 
 @media (min-width: 1000px) {
   .featureditems {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
   }
 }
@@ -499,10 +479,8 @@ margin-bottom: 32px;*/
 
 @media (min-width: 1200px) {
   .services .container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 46px;
   }
 }
@@ -553,13 +531,9 @@ margin-bottom: 32px;*/
 
 @media (min-width: 1200px) {
   .subscribe .container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     padding-top: 97px;
     padding-bottom: 109px;
   }
