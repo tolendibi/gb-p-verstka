@@ -1,3 +1,4 @@
+@import "_variables";
 body {
   margin: 0;
   font-family: Lato, sans-serif;
@@ -48,13 +49,30 @@ i {
 
 }
 
-.cartIconWrap {
-  display: none;
-  position: relative;
-  @media (min-width: 768px) {
-    display: inline;
-}
+    .cartIconWrap {
+        position: relative;
 
+        span {
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            color: white;
+            background: $majorColor;
+            border-radius: 50%;
+            position: absolute;
+            text-align: center;
+            right: -8px;
+            top: -19px;
+            font-size: 12px;
+            line-height: 19px;
+        }
+    }
+
+@media (min-width: 1600px) {
+    .container {
+        margin: 0 auto;
+        width: 1140px;
+    }
 }
 
 .searchIcon {
@@ -311,6 +329,12 @@ margin-bottom: 32px;*/
   width: 100%;
   display: block;
 }
+@media (min-width: 326px) {
+.featureditem, .img3 {
+  display: none;
+}
+}
+
 .featuredimgwrap {
   position: relative;
 }
