@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cart</title>
+    <title>product</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -37,7 +37,7 @@
                 MEN
             </div>
             <a href="../catalog/catalog.html">NEW ARRIVALS</a>
-            <a href="cart.html">SHOPPING CART</a>
+            <a href="../cart/cart.html">SHOPPING CART</a>
             <a href="#">Denim</a>
             <a href="#">T-Shirts</a>
         </div>
@@ -66,80 +66,90 @@
 
 <div class="newarrivals">
     <div class="container">
-        <h1>SHOPPING CART</h1>
-        
+        <h1>REGISTRATION </h1>
     </div>
 </div>
 
-<div class="container cart">
-        <div class="cartLeft">
 
-            <div class="cartUnit">
-                <div class="cartUnitInside">
-                    <img src="../images/cart/cart1.jpg" alt="" class="cartImg">
-                    <div class="cartProduct">
-                        <div class="cartProductName">MANGO PEOPLE T-SHIRT</div>
-                        <div class="cartProductPrice">
-                            Price: <span>$300</span>
-                        </div>
-                        <div class="cartProductColor">Color: Red</div>
-                        <div class="cartProductSize">Size: Xl</div>
-                        <div class="cartProductQty">
-                            Quantity:
-                            <input type="text" value="2">
-                        </div>
-                    </div>
-                </div>
+    <div class="container registration">
+        <form class="registrationLeft">
+            <div class="registrationNameLabel">Your Name</div>
+            <input class="registrationInput" type="text" placeholder="First Name">
+            <input class="registrationInput" type="text" placeholder="Last Name">
+
+            <div class="registrationGender">
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
             </div>
 
-            <div class="cartUnit">
-                <div class="cartUnitInside">
-                    <img src="../images/cart/cart2.jpg" alt="" class="cartImg">
-                    <div class="cartProduct">
-                        <div class="cartProductName">MANGO PEOPLE T-SHIRT</div>
-                        <div class="cartProductPrice">
-                            Price: <span>$300</span>
-                        </div>
-                        <div class="cartProductColor">Color: Red</div>
-                        <div class="cartProductSize">Size: Xl</div>
-                        <div class="cartProductQty">
-                            Quantity:
-                            <input type="text" value="2">
-                        </div>
-                    </div>
-                </div>
+
+            <div class="registrationLoginLabel">Login details</div>
+            <input class="registrationInput" type="email" placeholder="Email">
+            <input class="registrationInput" type="password" placeholder="Password">
+            <div class="registrationText">
+                Please use 8 or more characters, with at least 1 number
+                and a mixture of uppercase and lowercase letters
             </div>
 
-            <div class="cartLeftButtons">
-                <button>Clear shopping cart</button>
-                <button>Continue shopping</button>
+            <button class="registrationButton">
+                JOIN NOW
+                <img src="images/joinArrow.svg" alt="">
+            </button>
+        </form>
+
+        <div class="registrationRight">
+            <div class="registrationRightTitle">
+                LOYALTY HAS ITS PERKS
+            </div>
+            <div class="registrationRightText">
+                Get in on the loyalty program where you can earn points
+                and unlock serious perks. Starting with these as
+                soon as you join:
             </div>
 
-        </div>
-        <div class="cartRight">
-            <form action="" class="cartRightForm">
-                <div class="cartRightHeader">SHIPPING ADRESS</div>
-                <input type="text" placeholder="Bangladesh">
-                <input type="text" placeholder="State">
-                <input type="text" placeholder="Postcode / Zip">
-                <button>GET A QUOTE</button>
-            </form>
-
-            <div class="cartTotal">
-                <div class="cartSubtotal">
-                    SUB TOTAL <span>$900</span>
-                </div>
-                <div class="cartGrandtotal">
-                    GRAND TOTAL <span>$900</span>
-                </div>
-                <hr>
-                <button>PROCEED TO CHECKOUT</button>
-            </div>
+            <ul class="registrationRightList">
+                <li>15% off welcome offer</li>
+                <li>Free shipping, returns and exchanges on all orders</li>
+                <li>$10 off a purchase on your birthday</li>
+                <li>Early access to products</li>
+                <li>Exclusive offers & rewards</li>
+            </ul>
         </div>
     </div>
 
 
-
+    <div class="services">
+        <div class="container">
+            <div class="servicesunit">
+<img src="../images/services/delivery.svg" alt="#">
+<div class="servicestitle">
+    Free Delivery
+</div>
+<div class="servicestext">
+    Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+</div>
+</div>
+<div class="servicesunit">
+<img src="../images/services/discount.svg" alt="#">
+<div class="servicestitle">
+     Sales & discounts
+</div>
+<div class="servicestext">
+     Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+</div>
+</div>
+<div class="servicesunit">
+<img src="../images/services/assurance.svg" alt="#">
+<div class="servicestitle">
+    Quality assurance
+</div>
+<div class="servicestext">
+    Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+</div>
+</div>
+    </div>
+    </div>
     <div class="subscribe">
         <div class="container">
             <div class="subscribeleft">
